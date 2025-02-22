@@ -1,0 +1,188 @@
+/*
+Theme Name: REGOLDEN
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.gallery-item,
+body,
+header nav {
+    text-align: right;
+}
+
+header .sign-in-pr {
+    text-align: left;
+}
+
+
+header .sign-in-pr .sign li,
+header .sign-in-pr .sign li a.sign_in,
+header .sign-in-pr .sign li a.lnk-btn {
+    direction: ltr;
+}
+
+footer ul li a,
+.sidebar ul li.cat-item a,
+.search-form input.search-field, .sidebar select, #archives-dropdown-5 ,
+header nav {
+    padding-left: 0;
+}
+
+.blog-item .blog-info .meta li span,
+.blog-item .blog-info .meta li,
+header .sign-in-pr .sign li {
+    margin-right: 0;
+}
+
+header .sign-in-pr .sign li:last-child {
+    margin-left: 0;
+}
+
+footer .top-footer .my-property ul li i,
+.blog-item .blog-info p,
+.blog-item .blog-info .meta li {
+    padding-right: 0;
+}
+
+/* custom */
+
+header nav {
+    padding-right: 29px;
+}
+
+footer ul li a,
+.sidebar ul li.cat-item a {
+    padding-right: 20px;
+}
+
+.blog-item .blog-info .meta li,
+.blog-item .blog-info p {
+    padding-left: 20px;
+}
+
+.search-form input.search-field, .sidebar select, #archives-dropdown-5 {
+    padding-right: 10px;
+}
+
+header .sign-in-pr .sign li {
+    margin-left: 21.5px;
+}
+
+footer .top-footer .my-property ul li i ,
+.blog-item .blog-info .meta li {
+    margin-left: 10px;
+}
+
+.sidebar ul li.cat-item a::before, footer .types li a::before, footer ul li a::before {
+    right: 0;
+    left: initial;
+}
+
+.blog-item .blog-info .meta li span {
+    margin-left: 5px;
+}
+
+.pagination-single-inner > a.previous-post {
+	padding-right: 30px;
+	position: relative;
+}
+
+.pagination-single-inner > a.next-post {
+    float: left;
+	padding-left: 30px;
+	position: relative;
+}
+
+.pagination-single-inner > a.previous-post .arrow,
+.pagination-single-inner > a.next-post .arrow {
+    transform: rotate(180deg);
+	position: absolute;
+	margin: 0;
+}
+
+.pagination-single-inner > a.next-post .arrow {
+	left: 0;
+}
+
+.pagination-single-inner > a.previous-post .arrow {
+	right: 0;
+}
+
+.blog-item .blog-info .meta li::before {
+    left: 0;
+    right: initial;
+}
+
+.post-nav-links .post-page-numbers .fa.fa-angle-right:before, 
+.post-nav-links a .fa.fa-angle-right:before, 
+.nav-links a .fa.fa-angle-right:before, 
+.nav-links span  .fa.fa-angle-right:before{
+	content: "\f104";
+}
+
+.post-nav-links .post-page-numbers .fa.fa-angle-left:before, 
+.post-nav-links a .fa.fa-angle-left:before, 
+.nav-links a .fa.fa-angle-left:before, 
+.nav-links span  .fa.fa-angle-left:before{
+	content: "\f105";
+}
+
+.category-name {
+    left: initial;
+    right: 21px;
+}
+
+body .elementor-110 .elementor-element.elementor-element-455d811e > .elementor-element-populated {
+    padding: 0px 24px 0px 0px;
+}
+
+.sidebar ul li.cat-item a::before, footer .types li a::before, footer ul li a::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+header .sign-in-pr .sign li a.sign_in {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* media */
+
+@media (max-width: 1200px) {
+    .menu-btn {
+        margin-left: initial;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+    .blog-info,
+    footer .top-footer {
+        text-align: center;
+    }
+
+    .blog-item .blog-info .meta li, .blog-item .blog-info p {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 480px) {
+
+}

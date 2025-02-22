@@ -1,0 +1,426 @@
+header{
+	box-shadow: 0 0 10px rgba(1,1,1,0.11);
+	position: relative;
+	z-index: 9;
+	.row {
+		margin: 0;
+	}
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		background-color: #fff;
+		width: 100%;
+		nav {
+			text-align: right;
+			padding-right: 34px;
+		}
+	}
+	&.style2 {
+		.container {
+			max-width: 1170px;
+			.row {
+				margin: 0 -15px;
+			}
+		}
+		.sign-in-pr {
+			text-align: right;
+		}
+		nav {
+			text-align: right;
+		}
+	}
+	.sign-in-pr {
+		text-align: right;
+	} 
+	&.full, &.shdw {
+		.container-fluid {
+			padding: 0 30px;
+			.row {
+				margin: 0;
+			}
+		}
+		.search-form {
+			padding-top: 31px;
+			form{
+				position:relative;
+				height: 46px;
+				input{
+					color:#80868c;
+					font-size:15px;
+					font-family:$font_family;
+					font-weight:300;
+					width:100%;
+					padding-left:16px;
+					border:1px solid #eaeaea;
+					height: 100%;
+				}
+				button{
+					color:#ffffff;
+					font-size:15px;
+					font-family:$font_family;
+					font-weight:300;
+					background-color:#b39148;
+					position:absolute;
+					top:0;
+					right:0;
+					border:none;
+					height:100%;
+					padding:0 31px;
+					i {
+						margin-right: 7px;
+					}
+				}
+			}
+		}
+		.sign-in-pr {
+			text-align: right;
+		}
+	}
+	.logo {
+		width:100%;
+		margin-top: 44px;
+	}
+	.col-lg-6{
+		padding:0;
+	}
+	.col-lg-3{
+		padding:0;
+	}
+	nav{
+		ul{
+			li{
+				display:inline-block;
+				padding: 43px 13px 44px;
+				position: relative;
+				a{
+					color:#161616;
+					font-size: 15px;
+					font-family:$font_family;
+					font-weight:400;
+					text-transform:capitalize;
+					display:inline-block;
+					transition: all 0.4s ease-in-out;					
+				}
+				&:hover {
+					> ul {
+						opacity: 1;
+						visibility: visible;
+						li {
+							margin-top: 0;
+						}
+					}
+				}
+				ul {
+					position: absolute;
+					top: 100%;
+					text-align: left;
+					left: 0;
+					width: 250px;
+					box-shadow: 0 0 10px rgba(0,0,0,0.30);
+					z-index: 9999;
+					opacity: 0;
+					visibility: hidden;
+					transition: all 0.4s ease-in-out;
+					li {
+						padding: 0;
+						background-color: #b39148;
+						display: block;
+						width: 100%;
+						border-bottom: 1px solid rgba(255,255,255,0.15);
+						margin-top: 10px;
+						transition: all 0.4s ease-in-out;
+						a {
+							display: block;
+							padding: 14px 15px;
+							width: 100%;
+							color: #fff;
+							font-size: 14px;
+							&.active {
+								color: #fff;
+							}
+							&:hover {
+								background-color: #fff;
+								color: #b39148;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.sign-in-pr{
+		margin-top: 29px;
+		.sign{
+			li{
+				display: inline-block;
+				margin-right: 24px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					&.sign_in {
+						color: #161616;
+						font-size: 15px;
+						transition: all 0.4s ease-in-out;
+						&:hover {
+							color: #b39148;
+						}
+						i {
+							margin-right: 8px;
+						}
+					}
+					&.lnk-btn {
+						height: 48px;
+						line-height: 46px;
+						border:1px solid #b39148;
+						padding: 0 20px;
+						border-radius: 3px;
+						display: inline-block;
+						color: #b39148;
+						font-size: 15px;
+						transition: all 0.3s ease-in-out;
+						i {
+							margin-right: 7px;
+						}
+						&:hover {
+							color: #fff;
+							background-color: #b39148;
+						}
+					}
+				}
+			}
+		}
+	}
+	.search-op{
+		float:left;
+		width:100%;
+		input{
+			width:535px;
+			height:45px;
+			color:#80868c;
+			font-size:15px;
+			font-family:$font_family;
+			padding-left:10px;
+			border:none;
+		}
+	}
+	.icon-pr.md{
+		float:left;
+	}
+}
+header{
+	.header-1{
+		padding-left:20px;
+		.icon-pr{
+			width:30%;
+			float:left;
+		}
+		
+	}
+	.header-2{
+		padding-right:20px;
+		nav{
+			float:left;
+			ul{
+				li{
+					padding-left:10px;
+				}
+			}
+		}
+		.sign-in-pr{
+			float:right;
+		}
+	}
+}
+.half-map{
+	padding-top:31px;
+	padding-bottom:24px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+
+.custom-select {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	padding: 0;
+	line-height: inherit;
+	background-color: inherit;
+	border:0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+  	background: inherit;
+	height: auto;
+	padding: 43px 0;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+	border:0;
+	font-size: 15px;
+	color: #161616;
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	text-transform: uppercase;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #b39148;
+		&:after {
+			color: #b39148;
+		}
+	}
+}
+
+.select-items div {
+	color: #ffffff;
+	font-size: 15px;
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 18px 16px 18px 40px;
+	position: relative;
+	background-color: #b39148;
+}
+.select-items div:hover {
+	background-color: #ffffff;
+	color: #161616;
+}
+.select-items div:last-child {
+	margin-bottom: 0;
+}
+.select-items div:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	width: 21px;
+	height: 21px;
+	background-image: url(../images/flag1.png);
+	background-repeat: no-repeat;
+	transform: translateY(-50%);
+}
+.select-items div:nth-child(2):before {
+	background-image: url(../images/flag2.png);
+}
+.select-items div:nth-child(3):before {
+	background-image: url(../images/flag3.png);
+}
+/*style items (options):*/
+
+.select-items {
+	position: absolute;
+	background-color: #ffffff;
+	top: 100%;
+	right: 0;
+	right: 0;
+	z-index: 99;
+	width: 92px;
+	margin-top: 1px;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+.select-items.select-hide {
+	margin-top: 10px;
+}
+.select-hide {
+	opacity: 0;
+	visibility: hidden;
+	top: 100%;
+	margin-top: 20px;
+}
+.select-selected:after {
+	position: absolute;
+	content: "\f107";
+	font-family: fontawesome;
+	top: 2px;
+	right: 14px;
+	color: #000000;
+	font-size: 14px;
+	transition: all 0.4s ease-in-out;
+}
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #343434 transparent;
+}
+
+
+.menu-btn {
+	float: right;
+	font-size: 30px;
+	margin-top: 7px;
+	margin-left: 30px;
+	display: none;
+}
+
+
+.mobile-menu {
+	position: fixed;
+	top:0;
+	left:-300px;
+	width: 300px;
+	height: 100%;
+	background-color: #b39148;
+	z-index: 9999;
+	overflow-y: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		left:0;
+	}
+	ul {
+		li {
+			padding: 19px 15px;
+			border-bottom: 1px solid rgba(255,255,255,0.20);
+			a {
+				display: block;
+				color: #fff;
+				font-size: 16px;
+				text-transform: capitalize;
+			}
+
+		}
+		ul {
+			display: none;
+			padding: 0 15px;
+			li {
+				border-bottom: 0;
+				padding-bottom: 0;
+				line-height: 20px;
+			}
+		}
+	}
+}
+
+
+
+.header_content {
+	.logo {
+		float: left;
+		width: 18.24%;
+	}
+	.search-form {
+		float: left;
+		width: 29.2%;
+	}
+	nav {
+		float: left;
+		width: 36.85%;
+	}
+	.sign-in-pr {
+		float: right;
+		width: 15.71%;
+	}
+}
